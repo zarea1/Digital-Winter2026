@@ -88,11 +88,12 @@ header {
     color: var(--navy);
     font-size: 1.1rem;
     font-weight: 700;
-    margin-top: 6px;
+    margin-top: 20px;
     margin-bottom: 6px;
     position: relative;
     display: inline-block;
     line-height: 1.2;
+    padding-bottom: 5px;
 }
 
 .initiative-title::after {
@@ -108,8 +109,8 @@ header {
 
 .initiative-subtitle {
     color: var(--navy);
-    font-size: 0.8rem;
-    margin-top: 3px;
+    font-size: 0.9rem;
+    margin-top: 6px;
     opacity: 0.8;
     line-height: 1.3;
 }
