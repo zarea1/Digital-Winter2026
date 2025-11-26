@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' https://unpkg.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'">
+    <title>مبادرة شتاء رقمي  - Digital Winter Initiative</title>
+        <link rel="icon" type="image/x-icon" href="Logos/cropped_circle_image-21th.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Improved Logos Section -->
+        <div class="logos-section">
+            <div class="container">
+                <div class="logos-container">
+                    <!-- EDF Logo -->
+                    <div class="logo-item">
+                        <div class="logo-placeholder">
+                            <img src="Logos/cropped_circle_image.png" alt="EDF Logo" class="logo-image" loading="lazy">
+                        </div>
+                        <div class="logo-label">EDF</div>
+                    </div>
+
+                    <!-- Cisco Logo -->
+                    <div class="logo-item">
+                        <div class="logo-placeholder">
+                            <img src="Logos/cisco.png" alt="Cisco Logo" class="logo-image" loading="lazy">
+                        </div>
+                        <div class="logo-label">Cisco</div>
+                    </div>
+
+                    <!-- Partner Logo -->
+                    <div class="logo-item">
+                        <div class="logo-placeholder">
+                            <img src="Logos/WhatsApp_Image_2025-01-22_at_13.00.40_c3ddf8e0-removebg-preview - Copy.png" alt="Partner Logo" class="logo-image" loading="lazy">
+                        </div>
+                        <div class="logo-label">21TH CSH</div>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-placeholder">
+                            <img src="Logos/-removebg.png" alt="Partner Logo" class="logo-image" loading="lazy">
+                        </div>
+                        <div class="logo-label">MOETE</div>
+                    </div>
+                </div>
+
+                <div class="initiative-title">شتاء رقمي - Digital Winter</div>
+                <div class="initiative-subtitle">مراكز مهارات القرن الواحد والعشرين - 21th Century Skills Hubs</div>
+                <div class="initiative-subtitle">كورسات شركو سيسكو - Cisco Courses</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Loading Spinner -->
+            <div class="loading-spinner" id="loading-spinner">
+                <div class="spinner"></div>
+                <p>جاري التحميل...</p>
+            </div>
+
+            <!-- Error Message -->
+            <div class="error-message" id="error-message"></div>
+
+<!-- Governorates Section -->
+<section id="governorates">
+    <div class="section-title">
+        <h2>المحافظات - Governorates</h2>
+        <p>اختر محافظتك للاطلاع على الدورات التدريبية المتاحة</p>
+    </div>
+    <div class="governorates-container">
+        <div class="map-container">
+
+            <div id="egypt-map"></div>
+            <div class="selected-governorate-display" id="selected-governorate-display">
+                <h3 id="selected-gov-name">المحافظة المختارة</h3>
+            </div>
+        </div>
+        
+        <!-- Mobile Sidebar -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+        <div class="directorates-sidebar" id="directorates-sidebar">
+            <div class="directorates-header">
+                <h3>المحافظة - Governorate</h3>
+            </div>
+            <div class="directorates-grid" id="directorates-grid">
+                <!-- Directorates will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Courses Section -->
+<section id="courses">
+ <div class="section-title">
+        <h2>الدورات التدريبية - Training Courses</h2>
+        <p>اختر من بين مساراتنا التدريبية المتخصصة</p>
+    </div>
+                
+                <!-- Courses Filter Section -->
+                <div class="courses-header">
+                    <div class="courses-filter">
+                        <div class="filter-group">
+                            <label class="filter-label">المحافظة - Governorate</label>
+                            <select class="filter-select" id="governorate-filter">
+                                <option value="">اختر المحافظة - Select Governorate</option>
+                                <!-- Options will be populated by JavaScript -->
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label class="filter-label">نوع الكورس - Course Type</label>
+                            <select class="filter-select" id="course-type-filter">
+                                <option value="">جميع الكورسات - All Courses</option>
+                                <!-- Options will be populated by JavaScript -->
+                            </select>
+                        </div>
+                        <button class="filter-reset" id="filter-reset">إعادة تعيين - Reset</button>
+                    </div>
+                </div>
+                
+                <div id="courses-container">
+                    <!-- Courses will be populated by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- اللوجو والنص -->
+                <div class="footer-logo">
+                    <div class="logo-strip">
+                        <img src="Logos/cropped_circle_image.png" alt="EDF" loading="lazy">
+                    </div>
+                    <p>Education Development Fund (EDF)</p>
+                </div>
+
+                <!-- اتصل بنا -->
+                <div class="footer-contact">
+                    <h3>اتصل بنا</h3>
+                    <ul class="contact-info">
+                        <li>phone: +20 (2) 33369953</li>
+                        <li>Email : info@edf.edu.eg</li>
+                        <li>Location : 6th Of October, Giza, Egypt</li>
+                    </ul>
+                </div>
+
+                <!-- تابعنا -->
+                <div class="footer-social">
+                    <h3>تابعنا - Follow Us</h3>
+                    <ul class="social-links">
+                        <li><a href="https://edf.edu.eg/index" rel="noopener noreferrer">موقعنا الرسمي</a></li>
+                        <li><a href="https://www.facebook.com/share/1BdDhKEqu2/" target="_blank rel="noopener noreferrer">فيسبوك</a></li>
+                        <li><a href="https://www.linkedin.com/in/edf-edu-eg" target="_blank rel="noopener noreferrer">لينكد إن</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة © رئاسة مجلس الوزراء - صندوق تطوير التعليم</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
