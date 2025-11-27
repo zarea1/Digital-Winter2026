@@ -1,32 +1,32 @@
 // Governorates data with coordinates (approximate centroids)
 const governorates = [
-    { id: 'cairo', name: 'القاهرة', lat: 30.0444, lng: 31.2357 },
-    { id: 'giza', name: 'الجيزة', lat: 30.0131, lng: 31.2089 },
-    { id: 'alexandria', name: 'الاسكندرية', lat: 31.2001, lng: 29.9187 },
-    { id: 'qalyubia', name: 'القليوبية', lat: 30.4147, lng: 31.2015 },
-    { id: 'monufia', name: 'المنوفية', lat: 30.5261, lng: 30.9865 },
-    { id: 'sharqia', name: 'الشرقية', lat: 30.7063, lng: 31.6244 },
-    { id: 'gharbia', name: 'الغربية', lat: 30.8754, lng: 31.0335 },
-    { id: 'dakahlia', name: 'الدقهلية', lat: 31.0506, lng: 31.3776 },
-    { id: 'beheira', name: 'البحيرة', lat: 30.8481, lng: 30.3435 },
-    { id: 'kafr_el_sheikh', name: 'كفر الشيخ', lat: 31.3085, lng: 30.8039 },
-    { id: 'damietta', name: 'دمياط', lat: 31.4175, lng: 31.8144 },
-    { id: 'port_said', name: 'بورسعيد', lat: 31.2653, lng: 32.3019 },
-    { id: 'ismailia', name: 'الإسماعيلية', lat: 30.5965, lng: 32.2715 },
-    { id: 'suez', name: 'السويس', lat: 29.9668, lng: 32.5498 },
-    { id: 'matruh', name: 'مطروح', lat: 31.3517, lng: 27.2373 },
-    { id: 'south_sinai', name: 'جنوب سيناء', lat: 28.5331, lng: 34.1744 },
-    { id: 'north_sinai', name: 'شمال سيناء', lat: 30.9326, lng: 33.7497 },
-    { id: 'faiyum', name: 'الفيوم', lat: 29.3084, lng: 30.8428 },
-    { id: 'beni_suef', name: 'بني سويف', lat: 29.0761, lng: 31.0989 },
-    { id: 'minya', name: 'المنيا', lat: 28.1099, lng: 30.7503 },
-    { id: 'asyut', name: 'أسيوط', lat: 27.1828, lng: 31.1828 },
-    { id: 'sohag', name: 'سوهاج', lat: 26.5569, lng: 31.6948 },
-    { id: 'qena', name: 'قنا', lat: 26.1644, lng: 32.7267 },
-    { id: 'luxor', name: 'الأقصر', lat: 25.6872, lng: 32.6396 },
-    { id: 'aswan', name: 'أسوان', lat: 24.0889, lng: 32.8998 },
-    { id: 'red_sea', name: 'البحر الأحمر', lat: 25.5401, lng: 33.8249 },
-    { id: 'new_valley', name: 'الوادي الجديد', lat: 25.4420, lng: 30.5457 }
+    { id: 'cairo', name: 'القاهرة',namee: 'Cairo', lat: 30.0444, lng: 31.2357 },
+    { id: 'giza', name: 'الجيزة',namee: 'Giza', lat: 30.0131, lng: 31.2089 },
+    { id: 'alexandria', name: 'الاسكندرية',namee: 'Alexandria', lat: 31.2001, lng: 29.9187 },
+    { id: 'qalyubia', name: 'القليوبية',namee: 'Al-Qalyubia', lat: 30.4147, lng: 31.2015 },
+    { id: 'monufia', name: 'المنوفية',namee: 'Monufia', lat: 30.5261, lng: 30.9865 },
+    { id: 'sharqia', name: 'الشرقية',namee: 'Al-Sharqia', lat: 30.7063, lng: 31.6244 },
+    { id: 'gharbia', name: 'الغربية',namee: 'Al-Gharbia', lat: 30.8754, lng: 31.0335 },
+    { id: 'dakahlia', name: 'الدقهلية',namee: 'Al-Dakahlia', lat: 31.0506, lng: 31.3776 },
+    { id: 'beheira', name: 'البحيرة',namee: 'Al-Beheira', lat: 30.8481, lng: 30.3435 },
+    { id: 'kafr_el_sheikh', name: 'كفر الشيخ',namee: 'kafr el-sheikh', lat: 31.3085, lng: 30.8039 },
+    { id: 'damietta', name: 'دمياط',namee: 'Damietta', lat: 31.4175, lng: 31.8144 },
+    { id: 'port_said', name: 'بورسعيد',namee: 'Port Said', lat: 31.2653, lng: 32.3019 },
+    { id: 'ismailia', name: 'الإسماعيلية',namee: 'Ismailia', lat: 30.5965, lng: 32.2715 },
+    { id: 'suez', name: 'السويس',namee: 'Suez', lat: 29.9668, lng: 32.5498 },
+    { id: 'matruh', name: 'مطروح',namee: 'Marsa Matrouh', lat: 31.3517, lng: 27.2373 },
+    { id: 'south_sinai', name: 'جنوب سيناء',namee: 'South Sinai', lat: 28.5331, lng: 34.1744 },
+    { id: 'north_sinai', name: 'شمال سيناء',namee: 'North Sinai', lat: 30.9326, lng: 33.7497 },
+    { id: 'faiyum', name: 'الفيوم',namee: 'Faiyum', lat: 29.3084, lng: 30.8428 },
+    { id: 'beni_suef', name: 'بني سويف',namee: 'beni suef', lat: 29.0761, lng: 31.0989 },
+    { id: 'minya', name: 'المنيا',namee: 'Minya', lat: 28.1099, lng: 30.7503 },
+    { id: 'asyut', name: 'أسيوط',namee: 'Assiut', lat: 27.1828, lng: 31.1828 },
+    { id: 'sohag', name: 'سوهاج',namee: 'Sohag', lat: 26.5569, lng: 31.6948 },
+    { id: 'qena', name: 'قنا',namee: 'Qena', lat: 26.1644, lng: 32.7267 },
+    { id: 'luxor', name: 'الأقصر',namee: 'Luxor', lat: 25.6872, lng: 32.6396 },
+    { id: 'aswan', name: 'أسوان',namee: 'Aswan', lat: 24.0889, lng: 32.8998 },
+    { id: 'red_sea', name: 'البحر الأحمر',namee: 'Red Sea', lat: 25.5401, lng: 33.8249 },
+    { id: 'new_valley', name: 'الوادي الجديد',namee: 'New Valley', lat: 25.4420, lng: 30.5457 }
 ];
 
 // Updated course data with CCST Technician Support
@@ -576,7 +576,7 @@ function initializeMap() {
         // Add tile layer
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-            maxZoom: 18,
+            maxZoom: 6,
             minZoom: 5
         }).addTo(map);
 
@@ -873,7 +873,7 @@ function applyFilters() {
                         const gov = governorates.find(g => g.id === selectedGovernorate);
                         if (button && gov) {
                             button.disabled = false;
-                            button.textContent = `فتح الدورة لـ ${gov.name} - Open Course for ${gov.id}`;
+                            button.textContent = `فتح الدورة لـ ${gov.name} - Open Course for ${gov.namee}`;
                         }
                     } else {
                         if (button) {
