@@ -39,7 +39,7 @@ const courseCategories = [
                 id: 'english_for_it_1',
                 title: 'English for IT 1',
                 description: 'مقدمة في اللغة الإنجليزية المتخصصة في مجال تكنولوجيا المعلومات',
-                level: 'مبتدئ - Beginner'
+                level: 'متوسط - Intermediate'
             },
             {
                 id: 'english_for_it_2',
@@ -63,19 +63,19 @@ const courseCategories = [
                 id: 'networking_devices',
                 title: 'Networking devices and initial Configuration',
                 description: 'تهيئة وتكوين أجهزة الشبكات الأساسية',
-                level: 'متوسط - Intermediate'
+                level: 'مبتدئ - Beginner'
             },
             {
                 id: 'network_addressing',
                 title: 'Network Addressing and basic troubleshooting',
                 description: 'عنونة الشبكات وحل المشكلات الأساسية',
-                level: 'متوسط - Intermediate'
+                level: 'مبتدئ - Beginner'
             },
             {
                 id: 'network_support',
                 title: 'Network support and security',
                 description: 'دعم الشبكات وأساسيات الأمان',
-                level: 'متقدم - Advanced'
+                level: 'مبتدئ - Beginner'
             }
         ]
     },
@@ -87,19 +87,19 @@ const courseCategories = [
                 id: 'endpoint_security',
                 title: 'Endpoint Security',
                 description: 'أمن نقاط النهاية والحماية من التهديدات',
-                level: 'متوسط - Intermediate'
+                level: 'مبتدئ - Beginner'
             },
             {
                 id: 'network_defense',
                 title: 'Network Defense',
                 description: 'الدفاع عن الشبكات وحمايتها من الهجمات',
-                level: 'متقدم - Advanced'
+                level: 'مبتدئ - Beginner'
             },
             {
                 id: 'cyber_threat',
                 title: 'Cyber Threat Management',
                 description: 'إدارة التهديدات السيبرانية والاستجابة للحوادث',
-                level: 'متقدم - Advanced'
+                level: 'مبتدئ - Beginner'
             }
         ]
     },
@@ -129,7 +129,7 @@ const courseCategories = [
                 id: 'ai_fundamentals',
                 title: 'AI Fundamentals with IBM SkillsBuild',
                 description: 'أساسيات الذكاء الاصطناعي مع منصة IBM SkillsBuild',
-                level: 'متوسط - Intermediate'
+                level: 'مبتدئ - Beginner'
             }
         ]
     }
@@ -1080,6 +1080,7 @@ function showMobileAlert(message) {
         </button>
     `;
     
+    
     document.body.appendChild(alertDiv);
     
     // إزالة التنبيه تلقائياً بعد 5 ثواني
@@ -1094,6 +1095,9 @@ function showMobileAlert(message) {
 document.addEventListener('DOMContentLoaded', function() {
     try {
         showLoading();
+        
+        // Initialize EDF Guide
+        initEDFGuide();
         
         // تهيئة الخريطة فقط في الشاشات الكبيرة
         if (window.innerWidth >= 768) {
@@ -1269,4 +1273,5 @@ function applyFilters() {
         console.error('Error applying filters:', error);
     }
 }
+
 }
